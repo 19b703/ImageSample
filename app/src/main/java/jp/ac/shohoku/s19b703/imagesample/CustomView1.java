@@ -29,7 +29,7 @@ public class CustomView1 extends View {
         int w = this.getWidth(); //View の幅を取得
         int h = this.getHeight(); //View の高さを取得
         Paint p = new Paint(); //描画する図形の属性
-        p.setColor(Color.BLACK); //ダークグレイで描く
+        p.setColor(Color.BLACK);
         canvas.drawRect(new Rect(5,5,w-10,h-10),p); //長方形を canvas に描く
         Resources rs = this.getContext().getResources(); //リソースを取得
         Bitmap bmp = BitmapFactory.decodeResource(rs, R.drawable.image01); //画像を取得
