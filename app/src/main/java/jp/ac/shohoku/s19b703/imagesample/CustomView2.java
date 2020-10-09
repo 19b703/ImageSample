@@ -30,7 +30,7 @@ public class CustomView2 extends View {
     @Override
     protected void onDraw(Canvas canvas){
         super.onDraw(canvas);
-        canvas.drawColor(Color.WHITE); //キャンバスの背景を白にする
+        canvas.drawColor(Color.GREEN); //キャンバスの背景を白にする
 
         int w = this.getWidth(); //View の幅を取得
         int h = this.getHeight(); //View の高さを取得
@@ -39,7 +39,7 @@ public class CustomView2 extends View {
         p.setColor(Color.DKGRAY); //ダークグレイで描く
         canvas.drawRect(new Rect(5,5,w-10,h-10),p); //長方形を canvas に描く
         Resources rs = this.getContext().getResources(); //リソースを取得
-        Bitmap bmp = BitmapFactory.decodeResource(rs, R.drawable.image01); //画像を取得
-        canvas.drawBitmap(bmp, 0, 0, p); //画像の左上を Canvas の(0,0)に合わせて表示する
+        Bitmap bmp = BitmapFactory.decodeResource(rs, R.drawable.image02); //画像を取得
+        canvas.drawBitmap(bmp, 275, 100, p); //画像の左上を Canvas の(0,0)に合わせて表示する
     }
 }
