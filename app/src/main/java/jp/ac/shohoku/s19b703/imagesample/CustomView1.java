@@ -24,12 +24,13 @@ public class CustomView1 extends View {
     @Override
     protected void onDraw(Canvas canvas){
         super.onDraw(canvas);
-        canvas.drawColor(Color.WHITE); //キャンバスの背景を白にする
+        canvas.drawColor(Color.BLACK); //キャンバスの背景を白にする
 
         int w = this.getWidth(); //View の幅を取得
         int h = this.getHeight(); //View の高さを取得
         Paint p = new Paint(); //描画する図形の属性
-        p.setColor(Color.BLACK);
+        p.setStyle(Style.STROKE); //線のみ
+        p.setColor(Color.RED);
         canvas.drawRect(new Rect(5,5,w-10,h-10),p); //長方形を canvas に描く
         Resources rs = this.getContext().getResources(); //リソースを取得
         Bitmap bmp = BitmapFactory.decodeResource(rs, R.drawable.image01); //画像を取得
