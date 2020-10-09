@@ -33,7 +33,7 @@ public class CustomView1 extends View {
         p.setColor(Color.DKGRAY); //ダークグレイで描く
         canvas.drawRect(new Rect(5,5,w-10,h-10),p); //長方形を canvas に描く
         Resources rs = this.getContext().getResources(); //リソースを取得
-        Bitmap bmp = BitmapFactory.decodeResource(rs, R.drawable.GazouDayo); //画像を取得
+        Bitmap bmp = BitmapFactory.decodeResource(rs, R.drawable.image01); //画像を取得
         canvas.drawBitmap(bmp, 0, 0, p); //画像の左上を Canvas の(0,0)に合わせて表示する
     }
 }
