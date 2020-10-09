@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    /* @author Shibuya Ayaka */
+
     <jp.ac.shohoku.s19b703.imagesample.CustomView1
         android:id="@+id/customView1"
         android:layout_width="match_parent"
