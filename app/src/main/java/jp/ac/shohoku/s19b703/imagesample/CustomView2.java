@@ -1,3 +1,7 @@
+/**
+ * @author 19B706.AyaneTada
+ */
+
 package jp.ac.shohoku.s19b703.imagesample;
 
 import android.content.Context;
