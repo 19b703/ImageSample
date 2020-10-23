@@ -10,16 +10,16 @@
 
     <jp.ac.shohoku.s19b703.imagesample.TapView
         android:id="@+id/tapView"
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_width="415dp"
+        android:layout_height="724dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.041" />
+        app:layout_constraintVertical_bias="0.391" />
 
-<!--    <jp.ac.shohoku.s19b703.imagesample.CustomView2-->
+    <!--    <jp.ac.shohoku.s19b703.imagesample.CustomView2-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="350dp"-->
 <!--        app:layout_constraintBottom_toBottomOf="parent"-->
