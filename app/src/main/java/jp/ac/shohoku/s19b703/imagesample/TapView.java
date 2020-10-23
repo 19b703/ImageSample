@@ -12,14 +12,12 @@ import android.view.MotionEvent;
 import android.view.View;
 
 /**
-  * Created by utsumi on 2015/10/07.
+  * Created by tada on 2020/10/23.
   */
 public class TapView extends View {
     private Paint mPaint = new Paint(); //描画用のスタイル設定など
     private Bitmap mBmp = null; //表示用の Bitmap
-    private Bitmap mBmp2[3] = {R.drawable.image01, R.drawable.image02, R.drawable.image03}
     private int mTop, mLeft, mW, mH; //画像の幅と高さ
-    private int i = 0;
 
     /**
      * コンストラクタ
@@ -29,7 +27,7 @@ public class TapView extends View {
     public TapView(Context context, AttributeSet attrs) {
         super(context, attrs);
         Resources rs = this.getResources(); //リソースを取得 (R クラスから取得)
-        mBmp = BitmapFactory.decodeResource(rs, mBmp[i]); //リソースから画像を取得
+        mBmp = BitmapFactory.decodeResource(rs, R.drawable.image01); //リソースから画像を取得
         i++;
         mTop = 100;
         mLeft = 100;
