@@ -58,8 +58,13 @@ public class ChangeView extends View {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         Tap++;
-        if(Tap == 4)
+        if(Tap == 3) {
             Tap = 0;
+        }
+        int x = (int) event.getX();
+        int y = (int) event.getY();
+        mLeft = x - mW/2; //描画場所を変更
+        mTop = y - mH/2;
         mBmp = image[Tap];
         invalidate(); //再描画する
         return super.onTouchEvent(event);
