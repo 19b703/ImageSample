@@ -21,9 +21,10 @@ public class ChangeView extends View {
     Resources rs = this.getResources(); //リソースを取得 (R クラスから取得)
     Bitmap image[] = {BitmapFactory.decodeResource(rs, R.drawable.image01),
                       BitmapFactory.decodeResource(rs, R.drawable.image02),
-                      BitmapFactory.decodeResource(rs, R.drawable.image03)};
+                      BitmapFactory.decodeResource(rs, R.drawable.image03),
+                      BitmapFactory.decodeResource(rs, R.drawable.image04)};
     int Tap = 0;
-
+    int N;
 
 
     /**
@@ -58,14 +59,16 @@ public class ChangeView extends View {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         Tap++;
-        if(Tap == 3) {
-            Tap = 0;
+        N = Tap%3;
+        if(Tap%19 == 0){
+            N = 3;
         }
+
         int x = (int) event.getX();
         int y = (int) event.getY();
         mLeft = x - mW/2; //描画場所を変更
         mTop = y - mH/2;
-        mBmp = image[Tap];
+        mBmp = image[N];
         invalidate(); //再描画する
         return super.onTouchEvent(event);
     }
