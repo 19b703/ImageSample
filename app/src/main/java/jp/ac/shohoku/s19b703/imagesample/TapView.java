@@ -27,7 +27,7 @@ public class TapView extends View {
     public TapView(Context context, AttributeSet attrs) {
         super(context, attrs);
         Resources rs = this.getResources(); //リソースを取得 (R クラスから取得)
-        mBmp = BitmapFactory.decodeResource(rs, R.drawable.image02); //リソースから画像を取得
+        mBmp = BitmapFactory.decodeResource(rs, R.drawable.image01); //リソースから画像を取得
         mTop = 100;
         mLeft = 100;
         mW = mBmp.getWidth();
