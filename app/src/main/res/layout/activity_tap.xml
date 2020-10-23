@@ -9,7 +9,7 @@
     /* @author Shibuya Ayaka */
 
     <jp.ac.shohoku.s19b703.imagesample.TapView
-        android:id="@+id/customView1"
+        android:id="@+id/tapView"
         android:layout_width="match_parent"
         android:layout_height="350dp"
         app:layout_constraintBottom_toBottomOf="parent"
