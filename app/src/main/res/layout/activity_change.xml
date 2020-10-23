@@ -29,4 +29,13 @@
     <!--        app:layout_constraintTop_toTopOf="@+id/customView1"-->
     <!--        app:layout_constraintVertical_bias="0.956" />-->
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="あなたはどこに入会しますか？"
+        android:textSize="30dp"
+
+        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
