@@ -33,6 +33,7 @@ public class ChangeView extends View {
      */
     public ChangeView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        mBmp = image[Tap];
         mTop = 100;
         mLeft = 100;
         mW = mBmp.getWidth();
