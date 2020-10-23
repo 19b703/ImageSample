@@ -33,8 +33,6 @@ public class ChangeView extends View {
      */
     public ChangeView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        Resources rs = this.getResources(); //リソースを取得 (R クラスから取得)
-        mBmp = image[Tap];
         mTop = 100;
         mLeft = 100;
         mW = mBmp.getWidth();
@@ -61,6 +59,7 @@ public class ChangeView extends View {
         Tap++;
         if(Tap > 3)
             Tap = 0;
+        mBmp = image[Tap];
         invalidate(); //再描画する
         return super.onTouchEvent(event);
     }
