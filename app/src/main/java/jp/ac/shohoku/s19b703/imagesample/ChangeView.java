@@ -58,7 +58,7 @@ public class ChangeView extends View {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         Tap++;
-        if(Tap > 3)
+        if(Tap == 4)
             Tap = 0;
         mBmp = image[Tap];
         invalidate(); //再描画する
