@@ -12,7 +12,7 @@ import android.view.MotionEvent;
 import android.view.View;
 
 /**
- * Created by utsumi on 2015/10/07.
+ * @author Myu Kato
  */
 public class ChangeView extends View {
     private Paint mPaint = new Paint(); //描画用のスタイル設定など
